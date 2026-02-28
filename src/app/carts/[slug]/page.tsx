@@ -1,4 +1,3 @@
-// import { getStoryblokApi } from "@storyblok/react/rsc";
 import { StoryblokStory } from "@storyblok/react/rsc";
 import { getStoryblokApi } from "@/lib/storyblok";
 import { draftMode } from "next/headers";
