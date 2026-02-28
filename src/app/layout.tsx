@@ -30,7 +30,7 @@ storyblokInit({
     grid: Grid,
     hero: Hero,
     feature: Feature,
-  }
+  },
 });
 
 export default function RootLayout({
