@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
+import { Page } from "@/components/Page";
+import { Grid } from "@/components/Grid";
+import { Hero } from "@/components/Hero";
+import { Feature } from "@/components/Feature";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,6 +25,12 @@ export const metadata: Metadata = {
 storyblokInit({
   accessToken: process.env.STORYBLOK_DELIVERY_API_TOKEN,
   use: [apiPlugin],
+  components: {
+    page: Page,
+    grid: Grid,
+    hero: Hero,
+    feature: Feature,
+  }
 });
 
 export default function RootLayout({
