@@ -2,7 +2,9 @@ import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 import { Hero } from "@/components/Hero";
 import { Grid } from "@/components/Grid";
 import { Feature } from "@/components/Feature";
+import { Testimonial } from "@/components/Testimonial";
 import { Cart } from "@/components/Cart";
+import { RecommendedTours } from "@/components/RecommendedTours";
 import { Page } from "@/components/Page";
 
 export const getStoryblokApi = storyblokInit({
@@ -13,7 +15,9 @@ export const getStoryblokApi = storyblokInit({
     hero: Hero,
     grid: Grid,
     feature: Feature,
+    testimonial: Testimonial,
     cart: Cart,
+    recommended_tours: RecommendedTours,
     page: Page,
   },
   apiOptions: {

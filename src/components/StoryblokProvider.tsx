@@ -3,7 +3,9 @@ import { storyblokInit, apiPlugin } from "@storyblok/react";
 import { Hero } from "@/components/Hero";
 import { Grid } from "@/components/Grid";
 import { Feature } from "@/components/Feature";
+import { Testimonial } from "@/components/Testimonial";
 import { Cart } from "@/components/Cart";
+import { RecommendedTours } from "./RecommendedTours";
 import { Page } from "@/components/Page";
 
 import { getStoryblokApi } from "@/lib/storyblok";
@@ -17,7 +19,9 @@ storyblokInit({
     hero: Hero,
     grid: Grid,
     feature: Feature,
+    testimonial: Testimonial,
     cart: Cart,
+    recommended_tours: RecommendedTours,
     page: Page,
   },
   apiOptions: {
