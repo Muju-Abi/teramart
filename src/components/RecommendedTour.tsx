@@ -1,3 +1,16 @@
+import Link from "next/link";
+
+export const RecommendedTour = (props: any) => {
+    console.log("Its RecommendedTour with props:", props);
+    return (
+        <div>
+            <Link href={`/${props.story.full_slug}`}>
+                <h3>{props.story.content.name}</h3>
+            </Link>
+        </div>
+    );
+};
+
 // import Link from "next/link";
 // import Image from "next/image"; // Improved for Next.js 16
 

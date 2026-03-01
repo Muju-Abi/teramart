@@ -9,10 +9,8 @@ const fetchHomePage = async () => {
   
   try {
     const response = await client.getStory(`home`, {
-      version:
-        process.env.NODE_ENV === "development" || isEnabled
-          ? "draft"
-          : "published",
+      version: process.env.NODE_ENV === "development" || isEnabled ? "draft" : "published",
+      resolve_relations: ["recommended_tours.tours"], // Use array for consistency
     });
     return response.data.story;
   } catch (error) {
@@ -26,7 +24,7 @@ const HomePage = async () => {
   if (!story) {
     notFound();
   }
-  console.log("Rendering HomePage with story:", story);
+  // console.log("Rendering HomePage with story:", story);
   return <StoryblokStory story={story} />;
 }
 // const HomePage = () => {

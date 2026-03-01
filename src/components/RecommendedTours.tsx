@@ -1,7 +1,13 @@
+import { RecommendedTour } from "@/components/RecommendedTour";
+
 export const RecommendedTours = (params: any) => {
+//   console.log("Rendering RecommendedTours with params:", params);
   return (
         <section>
             <h2>{params.blok.headline}</h2>
+            {params.blok.tours?.map((tour: any) => (
+                <RecommendedTour story={tour} key={tour.content?._uid} />
+            ))}
         </section>
     );
 };
