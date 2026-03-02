@@ -7,6 +7,9 @@ export const RecommendedTour = (props: any) => {
             <Link href={`/${props.story.full_slug}`}>
                 <h3>{props.story.content.name}</h3>
             </Link>
+            <Link className="font-bold text-base mt-8 block underline" href={`/${props.story.full_slug}`}>
+              View Tour
+            </Link>
         </div>
     );
 };

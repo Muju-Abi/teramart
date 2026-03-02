@@ -17,9 +17,9 @@ interface GridProps {
 
 export const Grid = ({ blok }: GridProps) => {
   return (
-    <section {...storyblokEditable(blok)} className="bg-red-100 py-16">
+    <section {...storyblokEditable(blok)} className="bg-green-100 py-16">
       <div className="container mx-auto w-full px-4">
-        <h2 className="text-3xl md:text-4xl font-bold">
+        <h2 className="text-3xl md:text-4xl font-bold text-green-600">
           {blok.headline}
         </h2>
         <div className="grid md:grid-flow-col auto-cols-fr mt-12 gap-8">

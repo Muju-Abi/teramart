@@ -18,7 +18,7 @@ export const Feature = ({ blok }: FeatureProps) => {
       {...storyblokEditable(blok)}
       className="bg-white p-8 rounded-sm shadow"
     >
-      <h3 className="font-bold text-3xl">{blok.headline}</h3>
+      <h3 className="font-bold text-3xl text-orange-600">{blok.headline}</h3>
       <p className="mt-6 text-lg">{blok.content}</p>
     </div>
   );

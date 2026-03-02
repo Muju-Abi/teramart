@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import StoryblokProvider from "@/components/StoryblokProvider";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div>Layout Head Cache</div>
+        <header className="bg-orange-100 mx-auto px-4 w-full">
+          <nav className="container mx-auto flex justify-between items-center font-medium uppercase text-green-600">
+            <Link href={"/"}>
+              <span>
+                <svg width="200" height="43" viewBox="0 0 150 32" fill="none" xmlns="http://www.w3.org">
+                  <path d="M4 6H8L10.5 18H22L24 10H10" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="24" r="2" fill="#FF9800"/>
+                    <circle cx="20" cy="24" r="2" fill="#FF9800"/>
+                    <text x="32" y="21" font-family="Arial, sans-serif" font-weight="bold" font-size="18">
+                      <tspan fill="#4CAF50">Tera</tspan><tspan fill="#FF9800">mart</tspan>
+                    </text>
+                </svg>
+              </span>
+            </Link>
+            <Link href={"/carts"}>Carts</Link>
+          </nav>
+        </header>
         {children}
       </body>
     </html>

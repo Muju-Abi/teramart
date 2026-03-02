@@ -40,7 +40,7 @@ export const Cart = ({ blok }: CartProps) => {
       {...storyblokEditable(blok)}
       className="container mx-auto px-4 w-full pt-32 pb-16"
     >
-      <h1 className="text-3xl md:text-5xl font-bold">{blok.name}</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-orange-600">{blok.name}</h1>
       
       <Image
         className="mt-12 w-full object-cover rounded-lg"

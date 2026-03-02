@@ -3,11 +3,13 @@ import { RecommendedTour } from "@/components/RecommendedTour";
 export const RecommendedTours = (params: any) => {
 //   console.log("Rendering RecommendedTours with params:", params);
   return (
-        <section>
+        <section className="py-16 container mx-auto w-full px-4">
             <h2>{params.blok.headline}</h2>
-            {params.blok.tours?.map((tour: any) => (
-                <RecommendedTour story={tour} key={tour.content?._uid} />
-            ))}
+            <div className="grid md:grid-cols-2 gap-8 mt-16">
+                {params.blok.tours?.map((tour: any) => (
+                    <RecommendedTour story={tour} key={tour.content?._uid} />
+                ))}
+            </div>   
         </section>
     );
 };
