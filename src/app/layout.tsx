@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="bg-orange-100 mx-auto px-4 w-full">
+        <header className="bg-orange-100 mx-auto p-4 w-full">
           <nav className="container mx-auto flex justify-between items-center font-medium uppercase text-green-600">
             <Link href={"/"}>
               <span>
