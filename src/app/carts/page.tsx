@@ -45,9 +45,11 @@ const CartsPage = async () => {
   return (
     <div>
         <StoryblokStory story={story} />;
-        {carts?.map((cart: any) => (
-            <RecommendedTour story={cart} key={cart.uuid || cart.content?._uid} />
-        ))}
+        <div className="grid md:grid-cols-2 gap-8 container mx-auto px-4 w-full py-16">
+            {carts?.map((cart: any) => (
+                <RecommendedTour story={cart} key={cart.uuid || cart.content?._uid} />
+            ))}
+        </div>
     </div>
   );
     
