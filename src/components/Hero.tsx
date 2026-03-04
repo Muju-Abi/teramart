@@ -4,6 +4,8 @@ import { storyblokEditable, SbBlokData } from "@storyblok/react/rsc";
 interface HeroBlok extends SbBlokData {
   headline: string;
   content: string;
+  bgimage?: { filename: string };
+  bgcolor?: { color: string };
 }
 
 interface HeroProps {
@@ -14,7 +16,7 @@ export const Hero = ({ blok }: HeroProps) => {
   return (
     <section
       {...storyblokEditable(blok)}
-      className="container mx-auto px-4 w-full pt-32 pb-16"
+      className="container mx-auto px-4 w-full pt-32 pb-16 bg-no-repeat bg-left bg-contain" style={{ backgroundImage: blok.bgimage ? `url(${blok.bgimage.filename})` : undefined, backgroundColor: blok.bgcolor?.color }}
     >
       <h1 className="text-center text-5xl md:text-7xl font-bold text-green-600">
         {blok.headline}
