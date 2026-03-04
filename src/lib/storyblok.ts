@@ -5,6 +5,8 @@ import { Feature } from "@/components/Feature";
 import { Testimonial } from "@/components/Testimonial";
 import { Cart } from "@/components/Cart";
 import { RecommendedTours } from "@/components/RecommendedTours";
+import { Carousel } from "@/components/Carousel";
+import { Slide } from "@/components/Slide";
 import { Page } from "@/components/Page";
 
 export const getStoryblokApi = storyblokInit({
@@ -18,6 +20,8 @@ export const getStoryblokApi = storyblokInit({
     testimonial: Testimonial,
     cart: Cart,
     recommended_tours: RecommendedTours,
+    carousel: Carousel,
+    slide: Slide,
     page: Page,
   },
   apiOptions: {

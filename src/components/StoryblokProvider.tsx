@@ -6,6 +6,8 @@ import { Feature } from "@/components/Feature";
 import { Testimonial } from "@/components/Testimonial";
 import { Cart } from "@/components/Cart";
 import { RecommendedTours } from "./RecommendedTours";
+import { Carousel } from "@/components/Carousel";
+import { Slide } from "@/components/Slide";
 import { Page } from "@/components/Page";
 
 import { getStoryblokApi } from "@/lib/storyblok";
@@ -22,6 +24,8 @@ storyblokInit({
     testimonial: Testimonial,
     cart: Cart,
     recommended_tours: RecommendedTours,
+    carousel: Carousel,
+    slide: Slide,
     page: Page,
   },
   apiOptions: {
