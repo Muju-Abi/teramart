@@ -38,7 +38,7 @@ export const Carousel = ({ blok }: { blok: any }) => {
           modifier: 2,
           slideShadows: false,
         }}
-        // Tailwind class to style the arrows/dots container
+        // Tailwind class to style arrows/dots container
         className="max-w-5xl mx-auto !pb-12" 
       >
         {blok.body?.map((nestedBlok: any) => (
