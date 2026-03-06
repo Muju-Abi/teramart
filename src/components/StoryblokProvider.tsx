@@ -14,8 +14,7 @@ import { getStoryblokApi } from "@/lib/storyblok";
 import { ReactNode } from "react";
 
 storyblokInit({
-  accessToken: 'FOp2ehJrKTCFioGMUTIONQtt',
-//   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_PREVIEW_API_TOKEN,
+  accessToken: process.env.NEXT_PUBLIC_STORYBLOK_PREVIEW_API_TOKEN,
   use: [apiPlugin],
   components: {
     hero: Hero,
