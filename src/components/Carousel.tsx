@@ -4,13 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // 1. Add Navigation and Pagination to imports
 import { EffectCoverflow, Navigation, Pagination, Autoplay } from 'swiper/modules'; 
 
-// import 'swiper/css';
-// import 'swiper/css/effect-coverflow';
-// import 'swiper/css/autoplay'; 
-// 2. Add specific CSS for navigation and dots
-// import 'swiper/css/navigation'; 
-// import 'swiper/css/pagination'; 
-
 export const Carousel = ({ blok }: { blok: any }) => {
   return (
     <section {...storyblokEditable(blok)} className="py-12 relative px-10">
@@ -19,6 +12,7 @@ export const Carousel = ({ blok }: { blok: any }) => {
         effect="coverflow"
         centeredSlides={true}
         slidesPerView="auto"
+        // slidesPerView={2}
         loop={true}
         // 3. Enable Navigation (Arrows)
         navigation={true} 
