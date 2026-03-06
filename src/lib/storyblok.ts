@@ -10,10 +10,8 @@ import { Slide } from "@/components/Slide";
 import { Page } from "@/components/Page";
 
 export const getStoryblokApi = storyblokInit({
-//   accessToken: 'FOp2ehJrKTCFioGMUTIONQtt',
-//   accessToken: process.env.STORYBLOK_DELIVERY_API_TOKEN,
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_PREVIEW_API_TOKEN,
-  use: [apiPlugin], // CRITICAL: This must be present
+  use: [apiPlugin],
   components: {
     hero: Hero,
     grid: Grid,
